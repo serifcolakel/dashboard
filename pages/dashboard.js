@@ -13,6 +13,7 @@ import Account from "./components/Account";
 import Settings from "./components/Settings";
 import { MdSpaceDashboard, MdSettings } from "react-icons/md";
 import { RiShoppingBagFill, RiExternalLinkLine } from "react-icons/ri";
+import Link from "next/link";
 
 export default function Dashboard() {
   const [active, setActive] = React.useState("dashboard");
@@ -94,18 +95,22 @@ export default function Dashboard() {
                 <MdSettings size={25} />
                 <p>Settings</p>
               </div>
-              <div className="flex flex-row gap-x-4 hover:text-[#10B981] cursor-pointer p-2">
-                <FaLock size={25} />
-                <p>Login</p>
-              </div>
-              <div className="flex flex-row gap-x-4 hover:text-[#10B981] cursor-pointer p-2">
-                <FaUserPlus size={25} />
-                <p>Register</p>
-              </div>
+              <Link href="/login">
+                <div className="flex flex-row gap-x-4 hover:text-[#10B981] cursor-pointer p-2">
+                  <FaLock size={20} />
+                  <p>Login</p>
+                </div>
+              </Link>
+              <Link href="/register">
+                <div className="flex flex-row gap-x-4 hover:text-[#10B981] cursor-pointer p-2">
+                  <FaUserPlus size={20} />
+                  <p>Register</p>
+                </div>
+              </Link>
             </div>
           </div>
-          <div className="flex flex-col gap-y-4 p-4">
-            <p className="text-base ">Need more Features</p>
+          <div className="flex flex-col gap-y-2 p-4">
+            <p className="text-base">Need more Features</p>
             <p className="text-[#9CA3AF] text-xs ">Check out our Other Offer</p>
             <img
               src="https://i.hizliresim.com/pd2th89.png"

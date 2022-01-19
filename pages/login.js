@@ -171,7 +171,7 @@ export default function Login() {
             </button>
           </div>
           <div className="flex flex-row md:text-lg gap-x-4 text-white items-center justify-center text-[12px] ">
-            <p>Don't have a account yet?</p>
+            <p>Don&apos;t have a account yet?</p>
             <Link href="/register">
               <p className="text-blue-500 font-bold hover:cursor-pointer ">
                 Sing Up

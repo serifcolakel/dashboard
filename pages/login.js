@@ -6,11 +6,12 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { FaGithub, FaFacebook, FaGoogle } from "react-icons/fa";
 import users from "./users.json";
+import Link from "next/link";
 
 export default function Login() {
   const [loading, setLoading] = React.useState(false);
   const router = useRouter();
-  console.log(users);
+
   const schema = yup
     .object({
       email: yup.string().email().required(),
@@ -171,9 +172,11 @@ export default function Login() {
           </div>
           <div className="flex flex-row md:text-lg gap-x-4 text-white items-center justify-center text-[12px] ">
             <p>Don't have a account yet?</p>
-            <a href="/register" className="text-blue-500 font-bold text-left">
-              Sing Up
-            </a>
+            <Link href="/register">
+              <p className="text-blue-500 font-bold hover:cursor-pointer ">
+                Sing Up
+              </p>
+            </Link>
           </div>
         </div>
       </div>

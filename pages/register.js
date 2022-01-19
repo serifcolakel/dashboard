@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
+import Link from "next/link";
 
 export default function Register() {
   const router = useRouter();
@@ -41,7 +42,7 @@ export default function Register() {
           className="hidden md:block w-[650px] h-auto object-cover "
         />
         <div className="flex flex-col items-center justify-center md:w-[593px] md:h-[563px] z-20 gap-y-4 bg-white bg-opacity-20 bg-backdrop-brightness-[75%] border-2 rounded-2xl p-4">
-          <h1 className="text-4xl font-extrabold bg-bgskills text-clip ">
+          <h1 className="text-4xl font-extrabold  text-white bg-bgskills bg-clip-text ">
             {"Register".split("").map((n, i) => (
               <ReactTextTransition
                 key={i}
@@ -122,9 +123,11 @@ export default function Register() {
               </button>
               <div className="flex flex-row gap-x-4">
                 <p>Alreay a Member ? </p>
-                <a href="/login" className="text-blue-400 font-bold">
-                  Login{" "}
-                </a>
+                <Link href="/login" className="text-blue-400 font-bold">
+                  <p className="text-blue-500 font-bold hover:cursor-pointer ">
+                    Login
+                  </p>
+                </Link>
               </div>
             </div>
           </form>

@@ -27,9 +27,7 @@ import Head from "next/head";
 export default function Dashboard() {
   const [active, setActive] = React.useState("dashboard");
   const [show, setShow] = React.useState(false);
-  const [showMenu, setShowMenu] = React.useState(false);
   const onlyWidth = useWindowWidth();
-  console.log(onlyWidth);
   return (
     <div className="relative mx-auto flex flex-col items-center justify-between bg-[#061325] h-[100vh] ">
       <Head>

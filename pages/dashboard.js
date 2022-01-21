@@ -58,9 +58,9 @@ export default function Dashboard() {
             }
             onClick={() => setShow(!show)}
           />
-          <a href="/dashboard" className="w-[140px] h-auto object-cover">
+          <Link href="/dashboard" className="w-[140px] h-auto object-cover">
             <img src="https://ake.com.tr/uploads/images/logo.png" alt="logo" />
-          </a>
+          </Link>
           <AiOutlineSearch
             size={25}
             className="hidden md:block absolute left-[21%] text-[#344050]"

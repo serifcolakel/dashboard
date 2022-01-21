@@ -6,7 +6,9 @@ import {
   FaUserFriends,
   FaUserPlus,
 } from "react-icons/fa";
+import { useWindowWidth } from "@react-hook/window-size";
 import DashboardMain from "./components/DashboardMain";
+
 import Customers from "./components/Customers";
 import Products from "./components/Products";
 import Account from "./components/Account";
@@ -24,7 +26,10 @@ import Head from "next/head";
 
 export default function Dashboard() {
   const [active, setActive] = React.useState("dashboard");
-  const [show, setShow] = React.useState(true);
+  const [show, setShow] = React.useState(false);
+  const [showMenu, setShowMenu] = React.useState(false);
+  const onlyWidth = useWindowWidth();
+  console.log(onlyWidth);
   return (
     <div className="relative mx-auto flex flex-col items-center justify-between bg-[#061325] h-[100vh] ">
       <Head>
@@ -89,7 +94,7 @@ export default function Dashboard() {
             className={
               show
                 ? "fixed top-[70px] w-auto h-[91vh] bg-[#0a81d8] md:flex flex-row md:flex-col justify-between rounded-lg hidden "
-                : "fixed  md:top-[70px] w-full md:w-auto h-[100vh] md:h-[91vh] divide-y-2 divide-[#1F2937] bg-[#0a81d8] flex flex-row md:flex-col justify-between md:rounded-lg"
+                : "fixed  md:top-[70px] w-full md:w-auto h-[100vh] md:h-[91vh] divide-y-2 divide-[#1F2937] bg-[#0a81d8] flex flex-col md:overflow-clip overflow-scroll md:flex-col justify-between md:rounded-lg"
             }
           >
             <div className="divide-y-2 divide-[#1F2937] w-full">
@@ -114,7 +119,7 @@ export default function Dashboard() {
               <div className="flex flex-col gap-y-4 p-4">
                 <div
                   onClick={() => {
-                    setActive("dashboard"), setShow(!show);
+                    setActive("dashboard"), onlyWidth < 768 && setShow(!show);
                   }}
                   className={
                     active === "dashboard"
@@ -127,7 +132,7 @@ export default function Dashboard() {
                 </div>
                 <div
                   onClick={() => {
-                    setActive("customers"), setShow(!show);
+                    setActive("customers"), onlyWidth < 768 && setShow(!show);
                   }}
                   className={
                     active === "customers"
@@ -140,7 +145,7 @@ export default function Dashboard() {
                 </div>
                 <div
                   onClick={() => {
-                    setActive("products"), setShow(!show);
+                    setActive("products"), onlyWidth < 768 && setShow(!show);
                   }}
                   className={
                     active === "products"
@@ -153,7 +158,7 @@ export default function Dashboard() {
                 </div>
                 <div
                   onClick={() => {
-                    setActive("account"), setShow(!show);
+                    setActive("account"), onlyWidth < 768 && setShow(!show);
                   }}
                   className={
                     active === "account"
@@ -166,7 +171,7 @@ export default function Dashboard() {
                 </div>
                 <div
                   onClick={() => {
-                    setActive("settings"), setShow(!show);
+                    setActive("settings"), onlyWidth < 768 && setShow(!show);
                   }}
                   className={
                     active === "settings"
@@ -191,11 +196,7 @@ export default function Dashboard() {
                 </Link>
               </div>
             </div>
-            <div
-              className={
-                show ? "hidden" : "hidden md:flex md:flex-col gap-y-2 p-4"
-              }
-            >
+            <div className={show ? "hidden" : "flex flex-col gap-y-2 p-4"}>
               <p className="text-base">Need more Features</p>
               <p className="text-[#9CA3AF] text-xs ">
                 Check out our Other Offer

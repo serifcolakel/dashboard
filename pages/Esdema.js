@@ -20,12 +20,12 @@ export default function Esdema() {
       <div className="relative max-w-screen-xl text-white w-full h-[600px] mx-auto z-10">
         <div className="flex flex-row items-center justify-between p-4 text-sm font-bold  ">
           <div className="flex flex-row items-center gap-x-8 px-4 ">
-            <a href="/">
+            <a href="#">
               <p>ESDEMA</p>
             </a>
 
             <div className="md:flex flex-row hidden">
-              <a href="/" className="text-white flex flex-row items-center">
+              <a href="#" className="text-white flex flex-row items-center">
                 <HiDocumentText size={25} /> <p>DOCS</p>
               </a>
             </div>

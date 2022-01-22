@@ -14,7 +14,7 @@ import {
 export default function Esdema() {
   const [isOpen, setIsOpen] = React.useState(false);
   return (
-    <div className="w-full ">
+    <div className="w-full md:h-[300vh] ">
       <div className="absolute md:-top-[390px] -top-[100px] w-full md:h-[1090px] -skew-y-3 h-[600px] bg-esdema-bg bg-cover bg-no-repeat" />
       <div className="absolute md:-top-[390px] -top-[100px] w-full md:h-[1090px] -skew-y-3 h-[600px] bg-[#00000099] " />
       <div className="relative max-w-screen-xl text-white w-full h-[600px] mx-auto z-10">
@@ -266,9 +266,9 @@ export default function Esdema() {
           </div>
         </div>
       </div>
-      <div className="absolute md:top-[3090px] top-[4600px] w-full md:h-[990px] -skew-y-3 h-[1900px] bg-[#1e293b] " />
-      <div className="relative max-w-screen-xl mx-auto text-center md:w-4/12 w-[90%] pt-[400px] ">
-        <p className="md:text-4xl text-white text-3xl font-bold pb-4">
+      <div className="absolute md:top-[3090px] top-[4600px] w-full md:h-[1290px] -skew-y-3 h-[1650px] bg-[#1e293b] z-10 " />
+      <div className="relative max-w-screen-xl mx-auto text-center md:w-4/12 w-[90%] md:pt-[400px] pt-[150px] z-20">
+        <p className="md:text-4xl text-white text-3xl font-bold pb-4 ">
           Build something
         </p>
         <p className="text-lg text-white">
@@ -278,7 +278,7 @@ export default function Esdema() {
           <br /> Administration, Ted, Scambos.
         </p>
       </div>
-      <div className="relative max-w-screen-xl mx-auto flex flex-col md:flex-row gap-y-4 p-8 md:gap-x-8 -top-[200px] md:top-0 z-10 ">
+      <div className="relative max-w-screen-xl mx-auto flex flex-col md:flex-row gap-y-4 p-8 md:gap-x-8 z-20">
         <div className="md:w-[384px] h-[232px] flex flex-col gap-y-4 text-center p-4 md:mt-12">
           <GiRibbonMedal
             size={48}
@@ -314,7 +314,7 @@ export default function Esdema() {
         </div>
       </div>
 
-      <form className="relative w-[90%] mx-auto bg-[#e2e8f0] md:w-4/12 p-10 rounded-xl flex flex-col gap-y-4 ">
+      <form className="relative w-[90%] mx-auto bg-[#e2e8f0] md:w-4/12 p-10 rounded-xl flex flex-col gap-y-4 z-20">
         <p className="text-2xl font-semibold">Want to work with us? </p>
         <p className="text-[#768499] font-semibold text-sm">
           Complete this form and we will get back to you in 24 hours.
@@ -335,11 +335,18 @@ export default function Esdema() {
 
         <textarea className="shadow-lg w-full p-2 rounded-lg" />
         <div className="flex items-center justify-center ">
-        <button className="bg-[#1e293b] text-white font-bold rounded-lg p-2 w-[200px]">
-          SEND MESSAGE
-        </button>
+          <button className="bg-[#1e293b] text-white font-bold rounded-lg p-2 w-[200px]">
+            SEND MESSAGE
+          </button>
         </div>
       </form>
+      <div className="absolute md:top-[4260px] top-[6150px] w-full md:h-[450px] h-[600px] bg-[#e2e8f0] " />
+      <div className="relative max-w-screen-xl mx-auto flex flex-col pt-[250px] text-red-500 z-50">
+      <div> 
+      Let's keep in touch!
+Find us on any of these platforms, we respond 1-2 business days.
+      </div>
+      </div>
     </div>
   );
 }

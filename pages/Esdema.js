@@ -14,7 +14,7 @@ import {
 export default function Esdema() {
   const [isOpen, setIsOpen] = React.useState(false);
   return (
-    <div className="w-full md:h-[300vh] ">
+    <div className="w-full ">
       <div className="absolute md:-top-[390px] -top-[100px] w-full md:h-[1090px] -skew-y-3 h-[600px] bg-esdema-bg bg-cover bg-no-repeat" />
       <div className="absolute md:-top-[390px] -top-[100px] w-full md:h-[1090px] -skew-y-3 h-[600px] bg-[#00000099] " />
       <div className="relative max-w-screen-xl text-white w-full h-[600px] mx-auto z-10">
@@ -340,12 +340,78 @@ export default function Esdema() {
           </button>
         </div>
       </form>
-      <div className="absolute md:top-[4260px] top-[6150px] w-full md:h-[450px] h-[600px] bg-[#e2e8f0] " />
-      <div className="relative max-w-screen-xl mx-auto flex flex-col pt-[250px] text-red-500 z-50">
-        <div>
-          Lets keep in touch! Find us on any of these platforms, we respond 1-2
-          business days.
+      <div className="absolute md:top-[4260px] top-[6150px] w-full md:h-[450px] h-[700px] bg-[#e2e8f0] " />
+      <div className="relative max-w-screen-xl mx-auto flex md:flex-row flex-col md:text-left text-center justify-between md:pt-[250px] pt-[100px] p-8">
+        <div className="flex flex-col gap-y-4">
+          <div>
+            <p className="md:text-3xl text-2xl font-bold">
+              Lets keep in touch!
+            </p>
+            <p className="text-lg text-gray-500">
+              Find us on any of these platforms, we respond 1-2 business days.
+            </p>
+          </div>
+          <div className="flex flex-row gap-x-4 mx-auto md:mx-0">
+            <a
+              herf="#"
+              className="text-lg text-gray-500 cursor-pointer shadow-xl rounded-full flex items-center justify-center bg-white w-12 h-12  "
+            >
+              <BsFacebook className="text-[#0284c7] " size={20} />
+            </a>
+            <a
+              herf="#"
+              className="text-lg text-gray-500 cursor-pointer shadow-xl rounded-full flex items-center justify-center bg-white w-12 h-12"
+            >
+              <BsTwitter className="text-[#38bdf8]" size={20} />
+            </a>
+            <a
+              herf="#"
+              className="text-lg text-gray-500 cursor-pointer shadow-xl rounded-full flex items-center justify-center bg-white w-12 h-12"
+            >
+              <BsInstagram className="text-[#ec4899]" size={20} />
+            </a>
+            <a
+              herf="#"
+              className="text-lg text-gray-500 cursor-pointer shadow-xl rounded-full flex items-center justify-center bg-white w-12 h-12"
+            >
+              <BsGithub className="text-black" size={20} />
+            </a>
+          </div>
         </div>
+        <div className="flex flex-col gap-y-2 pt-2">
+          <p> USEFUL LINKS</p>
+          <a href="#" className="font-bold text-[#768499]">
+            About Us
+          </a>
+          <a href="#" className="font-bold text-[#768499]">
+            {" "}
+            Blog
+          </a>
+          <a href="#" className="font-bold text-[#768499]">
+            Free Products
+          </a>
+        </div>
+        <div className="flex flex-col gap-y-2 pt-2">
+          <p> OTHER RESOURCES</p>
+          <a href="#" className="font-bold text-[#768499]">
+            MIT License
+          </a>
+          <a href="#" className="font-bold text-[#768499]">
+            Terms & Conditions
+          </a>
+          <a href="#" className="font-bold text-[#768499]">
+            Privacy
+          </a>
+          <a href="#" className="font-bold text-[#768499]">
+            Policy
+          </a>
+          <a href="#" className="font-bold text-[#768499]">
+            Contact Us
+          </a>
+        </div>
+      </div>
+      <div className="relative max-w-screen-xl text-[#768499] mx-auto font-bold text-sm text-center border-t-[1px] border-gray-400 pt-5 md:pt-2">
+        Copyright © 2022 ESDEMA NextJS by Rasit COLAKEL.
       </div>
     </div>
   );

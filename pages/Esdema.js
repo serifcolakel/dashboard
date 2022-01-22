@@ -112,12 +112,12 @@ export default function Esdema() {
             Working with us is a pleasure
           </p>
           <p className="text-[#768499] font-medium text-base">
-            Don't let your uses guess by attaching tooltips and popoves to any
+            Do not let your uses guess by attaching tooltips and popoves to any
             element. Just make sure you enable them first via JavaScript.
           </p>
           <p className="text-[#768499] font-medium text-base">
             The kit comes with three pre-built pages to help you get started
-            faster. You can change the text and images and you're good to go.
+            faster. You can change the text and images and you are good to go.
             Just make sure you enable them first via JavaScript.
           </p>
           <a href="#" className="text-gray-800 font-bold">
@@ -154,7 +154,7 @@ export default function Esdema() {
           <p className="text-gray-800 font-bold text-3xl">A growing company</p>
           <p className="text-[#768499] font-medium text-base">
             The extension comes with three pre-built pages to help you get
-            started faster. You can change the text and images and you're good
+            started faster. You can change the text and images and you re good
             to go.
           </p>
           <ul>
@@ -287,7 +287,7 @@ export default function Esdema() {
           <p className="text-white font-semibold text-lg">Excelent Services</p>
           <p className="text-[#768499] font-semibold text-sm">
             Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+            bulk of the card is content.
           </p>
         </div>
         <div className="md:w-[384px] h-[232px] flex flex-col gap-y-4 text-center p-4 md:mt-8">
@@ -298,7 +298,7 @@ export default function Esdema() {
           <p className="text-white font-semibold text-lg">Grow your market</p>
           <p className="text-[#768499] font-semibold text-sm">
             Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+            bulk of the card is content.
           </p>
         </div>
         <div className="md:w-[384px] h-[232px] flex flex-col gap-y-4 text-center p-4 md:mt-4">
@@ -309,7 +309,7 @@ export default function Esdema() {
           <p className="text-white font-semibold text-lg">Launch time</p>
           <p className="text-[#768499] font-semibold text-sm">
             Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+            bulk of the card is content.
           </p>
         </div>
       </div>
@@ -342,10 +342,10 @@ export default function Esdema() {
       </form>
       <div className="absolute md:top-[4260px] top-[6150px] w-full md:h-[450px] h-[600px] bg-[#e2e8f0] " />
       <div className="relative max-w-screen-xl mx-auto flex flex-col pt-[250px] text-red-500 z-50">
-      <div> 
-      Let's keep in touch!
-Find us on any of these platforms, we respond 1-2 business days.
-      </div>
+        <div>
+          Lets keep in touch! Find us on any of these platforms, we respond 1-2
+          business days.
+        </div>
       </div>
     </div>
   );

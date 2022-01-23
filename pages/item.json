@@ -1,0 +1,125 @@
+{
+    "elevator": [
+        {
+            "name": "ECO LINE",
+            "img": "https://ake.com.tr/uploads/images/ecoline2_asansor.JPG",
+            "explanation": "Konutlarınızda sade ve şık tasarımıyla tüm aile bireylerinin güvenle kullanabileceği bir asansör deneyimi sizi bekliyor. En yoğun kullanım saatlerinde dahi kusursuz çalışması için konforunuzu düşünerek üretildi. Eco Line ve Eco B Line serisi çevre dostu ve enerji tasarruflu olma özelliğine sahiptir. Eco Line halatlı, Eco B Line kayışlı asansörlerdir."
+        },
+        {
+            "name": "S LINE",
+            "img": "https://ake.com.tr/uploads/images/Taksim_asansor_sline.JPG",
+            "explanation": "Üstün kaliteli üretim teknolojisi ile S- Line orta yoğunlukta insan trafiği bulunan yapılarda kullanıma uygundur.  55 metreye kadar yükselen seyir mesafesi ve 2500 kg a kadar taşıma kapasitesine sahiptir. Yan duvarları satine paslanmaz, tam boy aynası, tavanda led aydınlatma tabanında ise kuartz kaplama seçenekleri yer almaktadır. Kaplama seçenekleri ile istenilen tarzda kabin tasarlama imkânı sunmaktadır. Dayanıklı ve modern bir tasarıma sahip S- Line bakımı kolay bir asansördür"
+        },
+        {
+            "name": "GOLD LINE",
+            "img": "https://ake.com.tr/uploads/images/Ahsap_asansor-goldline.JPG",
+            "explanation": "Misafirlerinizi AKE ayrıcalığı ile karşılayın. Göz alıcı tasarımlar, kullanışlı iç dizayn ve hızlı seyir özelliği ile yapılarınızda fark yaratır. Yoğun taşıma kapasitesi ve akıllı transfer özelliği ile yolcuları katlar arası gezinti yapmadan istedikleri yere ulaştırır."
+        },
+        {
+            "name": "H LINE",
+            "img": "https://ake.com.tr/uploads/images/sedye_asansoru.jpg",
+            "explanation": "Ake sağlık asansörleri hareket hassasiyetini göz önünde bulundurarak sarsıntısız taşıma sağlar.  Hızıyla hastaları güvenli bir şekilde katlar arası transfer eder. Özel koltuk tasarımı ve klima seçeneği ile konforunuzu artırır."
+        },
+        {
+            "name": "E LINE",
+            "img": "https://ake.com.tr/uploads/images/Slider6.jpg",
+            "explanation": "Acil durum asansörü (İtfaiye Asansörü) kullanımı doğrudan yangın söndürme ve kurtarma ekiplerinin veya itfaiyenin denetimi altında bulunan ve ek korunum uygulanmış olan özel asansördür. Yapı yüksekliği 51.50 metreden daha fazla olan yapılarda en az 1 asansörün acil hallerde kullanılmak üzere acil durum asansörü olarak düzenlenmesi şarttır"
+        },
+        {
+            "name": "YÜK ASANSÖRÜ",
+            "img": "https://ake.com.tr/uploads/images/yuk_asasnsoru.jpg",
+            "explanation": "Yük asansörleri sadece eşya taşımak için uygundur. monşarj , servis ve yük asansörü çeşitler mevcuttur. Alışveriş merkezi, işyerleri, hastaneler ve kurumlarda malzeme taşımak için kullanılır. Dayanıklılığı, uzun süre kullanım imkânı ve enerji tasarruflu olması sebebiyle tercih edilir."
+        },
+        {
+            "name": "CAR LINE",
+            "img": "https://ake.com.tr/uploads/images/car.jpg",
+            "explanation": "Araç asansörü alandan tasarruf etmenizi sağlıyor. AKE otopark ihtiyacı için geliştirdiği özel çözüm ile konut ve iş yerlerinin araç asansörü ihtiyaçlarında çözüm ortağı oluyor. 6000 kg’a kadar araç taşıyabilen sistem uzaktan kumanda ile de kontrol edilebiliyor. Katları verimli kullanmayı sağlayan araç asansörü, sarmal kapı sistemine sahip ve 15 metre yüksekliğe kadar çıkabiliyor."
+        },
+        {
+            "name": "PANORAMİK",
+            "img": "https://ake.com.tr/uploads/images/154-201706151354271.jpg",
+            "explanation": "Düz, Mantar, Roket kabin seçenekleri ile estetik ve kullanışlı asansörlerdir."
+        },
+        {
+            "name": "YAMAÇ ASANSÖRÜ",
+            "img": "https://ake.com.tr/uploads/images/Yamac_asansoru.jpg",
+            "explanation": "Yamaç Asansörleri ile tasarım ve esnekliği birleştiriyoruz. Yapısal sorunlu arazilerde teknolojik çözümler sunarak transfer kolaylığı sağlıyoruz. Özellikle turistik yerlerde ulaşım kolaylığı sağlayan asansörlerimiz eğimli arazilerde kapalı kabin sistemi ile transfer sağlamaktadır."
+        },
+        {
+            "name": "ECO B LINE",
+            "img": "https://ake.com.tr/uploads/images/Ecoline_asansor.JPG",
+            "explanation": "Tam boy ayna ve led aydınlatmasıyla ferah iç dizayna sahiptir. AKE uzmanlığı ile üretilen Eco serisi konforlu taşıma imkânı sunar."
+        }
+    ],
+    "stair": [
+        {
+            "name": "MODEL C",
+            "img": "https://ake.com.tr/uploads/images/ModelT.JPG",
+            "explanation": "Alışveriş merkezleri, iş yerleri ve otellerdeki yoğun yaya trafiğini hızlı ve konforlu taşıyabilmesi için dizayn edilmiştir. "
+        },
+        {
+            "name": "MODEL P",
+            "img": "https://ake.com.tr/uploads/images/baskentray.JPG",
+            "explanation": "Raylı sistem, yaya geçitleri, kongre merkezleri gibi kamuya açık yerlerdeki yoğunluğu hızlı ve konforlu taşıyabilmesi için ağır hizmet ürünü olarak dizayn edilmiştir."
+        },
+        {
+            "name": "MODEL T",
+            "img": "https://ake.com.tr/uploads/images/YM_Tmodel_fabrika_gorsel.JPG",
+            "explanation": "Metro, havaalanı, tren garı gibi yoğunluğu hızlı ve konforlu taşıyabilmesi için ağır hizmet ürünü olarak yoğun kullanıma uygun şekilde dizayn edilmiştir."
+        },
+        {
+            "name": "YÜRÜYEN YOL SİSTEMLERİ",
+            "img": "https://ake.com.tr/uploads/images/yuruyenbant_mugla2.JPG",
+            "explanation": "Bina trafiğinin yoğun olduğu iş merkezleri, alışveriş merkezleri, hava alanları, metrolar, hastaneler ve yaya geçitleri gibi insan yoğunluğunun yüksek olduğu kamusal alanlarda, AKE Yürüyen Yol Sistemleri mimari alanın yapısı, büyüklüğü ve alan seçimi gibi fonksiyonel kullanım koşullarına göre tasarlanır."
+        },
+        {
+            "name": "YÜRÜYEN MERDİVEN MODERNİZE",
+            "img": "https://ake.com.tr/uploads/images/Danimarka-Friss-ShoppingCenter.JPG",
+            "explanation": "Yoğun çalışma trafiğinde Yürüyen Merdivenler ve Yürüyen Yollar, artan trafik, değişen standartlar, verimli çalışma ihtiyacından dolayı modernizasyona ihtiyaç duyarlar."
+        },
+        {
+            "name": "YÜRÜYEN MERDİVENLERİN YERLEŞİM PLANI",
+            "img": "https://ake.com.tr/uploads/images/antalya.JPG",
+            "explanation": "Yürüyen merdivenler yerleşim sahasının durumuna göre paralel veya çapraz olarak kurulabilir. "
+        }
+    ],
+    "disSys": [
+        {
+            "name": "DİKEY TİP ENGELLİ PLATFORMU WLP SERİSİ",
+            "img": "https://ake.com.tr/uploads/images/dikey_tip_engelli_800x400px300dpi.jpg",
+            "explanation": ""
+        },
+        {
+            "name": "DİKEY TİP ENGELLİ PLATFORMU CL SERİSİ",
+            "img": "https://ake.com.tr/uploads/images/CL%204.jpg",
+            "explanation": "KE Asansör, Yürüyen Merdiven ve Engelli Sistemleri AR-GE ve Tasarım ekibi tarafından farklı seyir mesafelerine uygun modelleri ile CL 150, CL 300, CL 1200 olarak 3 model tasarlandı."
+        },
+        {
+            "name": "MERDİVEN TİPİ ENGELLİ PLATFORMU",
+            "img": "https://ake.com.tr/uploads/images/referanslar/referanslar_25_08_2021/hiro_320.jpg",
+            "explanation": ""
+        },
+        {
+            "name": "KOLTUK TİPİ ENGELLİ ASANSÖRÜ",
+            "img": "https://ake.com.tr/uploads/images/Koltuktipi_engelliasansor.JPG",
+            "explanation": "AKE’ nin Koltuk Tipi Merdiven Asansörü, her türlü merdiven yapıları için sade ve mükemmel bir üründür. Kullanıcıların güvenli bir şekilde ulaşımını sağlamak amacı ile her türlü emniyet önlemi düşünülmüştür. Acil durum hizmetleri için özel kontrol seçenekleri mevcuttur."
+        },
+        {
+            "name": "HAVUZ ASANSÖRÜ",
+            "img": "https://ake.com.tr/uploads/images/havuz_asansoru.JPG",
+            "explanation": "Oteller, kaplıcalar, yüzme havuzları, engelli dostu binalar için Havuz Asansörü AKE çözümüdür."
+        },
+        {
+            "name": "ENGELLİ ASANSÖR SİSTEMLERİ BİLGİLENDİRME",
+            "img": "https://ake.com.tr/uploads/images/Havuzasansoru.JPG",
+            "explanation": ""
+        }
+    ],
+    "special": [
+        {
+            "name": "My Lift",
+            "img": "https://ake.com.tr/uploads/images/banners/mylift_banner.jpg",
+            "explanation": "Standartların ötesinde özgün dizayna sahip asansörler üretmekteyiz."
+        }
+    ]
+}

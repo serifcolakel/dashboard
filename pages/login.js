@@ -31,14 +31,14 @@ export default function Login() {
   const onSubmit = async (e) => {
     if (e.email === users[0].email && e.password === users[0].password) {
       setLoading(true);
-      sleep(2000).then(() => {
+      sleep(1000).then(() => {
         router.push("/dashboard");
       });
     } else alert("Wrong email or password");
   };
   return (
     <div className="flex flex-col items-center justify-center bg-login-bg bg-no-repeat bg-cover h-[100vh] mx-auto overflow-hidden">
-      <img
+      {/* <img
         src="https://i.hizliresim.com/5xsdmmm.png"
         alt="logo"
         className="w-[150px] h-auto object-cover absolute right-0 bottom-0 z-10"
@@ -87,20 +87,20 @@ export default function Login() {
         src="https://i.hizliresim.com/hvxzsjf.png"
         alt="logo"
         className="hidden md:block w-[450px] h-auto object-cover absolute left-0 bottom-0 "
-      />
-      <div className="relative flex flex-col items-center justify-center bg-login-form-bg bg-center p-4  h-[600px] w-[300px]  md:w-[1520px] md:h-[736px] rounded-2xl">
-        <div className="flex flex-col items-center justify-center md:w-[593px] md:h-[563px] z-20 gap-y-2 bg-white bg-opacity-20 bg backdrop-brightness-[75%] border-2 rounded-2xl p-4">
+      /> */}
+      <div className="relative flex flex-col items-center justify-center p-4  h-[600px] w-[300px]  md:w-[1520px] md:h-[736px] rounded-2xl">
+        <div className="flex flex-col items-center justify-center md:w-[593px] md:h-[563px] z-20 gap-y-2 bg-white bg-opacity-30 bg-center rounded-2xl p-4">
           <img
             src="https://ake.com.tr/uploads/images/logo.png"
             alt="logo"
             className="w-[150px] h-auto object-cover"
           />
-          <h1 className="text-xs text-center font-extrabold text-white ">
+          <h1 className="md:text-xl text-sm text-center font-extrabold text-blue">
             AKE Asansör Sistemleri, Yürüyen Merdivenler ve Yollar, Engelli
             Asansör Sistemleri
           </h1>
 
-          <h1 className="text-4xl font-extrabold text-white pt-4 ">
+          <h1 className="text-4xl font-extrabold text-black pt-4 ">
             {"Login".split("").map((n, i) => (
               <ReactTextTransition
                 key={i}
@@ -119,7 +119,7 @@ export default function Login() {
             <div className="flex flex-col justify-center">
               <label
                 htmlFor="email"
-                className="text-white  text-lg font-bold text-left"
+                className="text-black  text-lg font-bold text-left"
               >
                 Email
               </label>
@@ -135,7 +135,7 @@ export default function Login() {
             <div className="flex flex-col justify-center">
               <label
                 htmlFor="password"
-                className="text-white text-lg font-bold"
+                className="text-black text-lg font-bold"
               >
                 Password
               </label>
@@ -170,7 +170,7 @@ export default function Login() {
               <FaGoogle size={25} className="mx-auto" />
             </button>
           </div>
-          <div className="flex flex-row md:text-lg gap-x-4 text-white items-center justify-center text-[12px] ">
+          <div className="flex flex-row md:text-lg gap-x-4 text-black items-center justify-center text-[12px] ">
             <p>Do not have a account yet?</p>
             <Link href="/register">
               <p className="text-blue-500 font-bold hover:cursor-pointer ">

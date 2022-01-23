@@ -25,7 +25,7 @@ import Head from "next/head";
 
 export default function Dashboard() {
   const [active, setActive] = React.useState("dashboard");
-  const [show, setShow] = React.useState(false);
+  const [show, setShow] = React.useState(true);
   const onlyWidth = useWindowWidth();
   return (
     <div className="relative mx-auto flex flex-col items-center justify-between bg-[#061325] h-[100vh] overflow-y-scroll ">
@@ -202,7 +202,7 @@ export default function Dashboard() {
               </div>
             </div>
             <div className={show ? "hidden" : "flex flex-col gap-y-2 p-4"}>
-              <p className="text-base">Need more Features124124</p>
+              <p className="text-base">Need more Features</p>
               <p className="text-[#9CA3AF] text-xs ">
                 Check out our Other Offer
               </p>

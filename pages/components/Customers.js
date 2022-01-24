@@ -16,7 +16,6 @@ export default function Customers() {
   });
   const [showUser, setShowUser] = React.useState(false);
   const [sendUser, setSendUser] = React.useState({});
-  console.log(sendUser);
   function handleDelete(id) {
     const data = users.filter((user) => user.id !== id);
     setUsers(data);
@@ -130,7 +129,10 @@ export default function Customers() {
             className="text-white absolute hover:text-red-500 cursor-pointer hover:bg-white top-10 right-10 md:right-8 md:top-8  bg-red-500 rounded-xl md:w-8 md:h-8 w-6 h-6 p-1"
           />
           <img
-            src={sendUser.imgUrl}
+            src={
+              sendUser.imgUrl ||
+              "https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"
+            }
             className="md:w-[100px] w-[70px] h-[70px] md:h-[100px] object-cover rounded-full p-2 border-2 border-[#0e1c2f] shadow-xl"
             alt={sendUser.name}
           />

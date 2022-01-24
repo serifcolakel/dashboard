@@ -26,7 +26,7 @@ import Head from "next/head";
 import Elevators from "./components/Elevators";
 
 export default function Dashboard() {
-  const [active, setActive] = React.useState("dashboard");
+  const [active, setActive] = React.useState("customers");
   const [show, setShow] = React.useState(false);
   const onlyWidth = useWindowWidth();
   return (
@@ -200,7 +200,7 @@ export default function Dashboard() {
                   <MdSettings size={25} />
                   <p className={show ? "hidden" : "block"}>Settings</p>
                 </div>
-                <Link href="/login">
+                {/* <Link href="/login">
                   <div className="flex flex-row gap-x-4 hover:text-[#10B981] cursor-pointer p-2">
                     <FaLock size={20} />
                     <p className={show ? "hidden" : "block"}>Login</p>
@@ -211,7 +211,7 @@ export default function Dashboard() {
                     <FaUserPlus size={20} />
                     <p className={show ? "hidden" : "block"}>Register</p>
                   </div>
-                </Link>
+                </Link> */}
               </div>
             </div>
             <div className={show ? "hidden" : "flex flex-col gap-y-2 p-4"}>

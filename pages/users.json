@@ -2,8 +2,9 @@
     {
         "id": 1,
         "name": "akeag Mihajlov",
-        "email": "test@gmail.com",
+        "email": "serifcolakel0@gmail.com",
         "phone": "+359 888 888 888",
+        "password": "1234",
         "role": "Electrician",
         "imgUrl": "https://falconreactbs4.prium.me/static/media/1.38f0341f.jpg"
     },

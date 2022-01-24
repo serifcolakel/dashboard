@@ -45,7 +45,6 @@ const options = {
 };
 
 export default function Products({ state }) {
-  console.log(state);
   return (
     <>
       <div className="flex flex-col gap-y-8 md:mr-0 px-4">
@@ -113,8 +112,8 @@ export default function Products({ state }) {
               key={index}
               className={
                 state
-                  ? "w-full md:w-[280px] flex flex-col justify-center pl-8 rounded-xl shadow-xl h-[180px] bg-revenue-card-bg bg-cover"
-                  : "w-full md:w-[250px] flex flex-col justify-center pl-8 rounded-xl shadow-xl h-[180px] bg-revenue-card-bg bg-cover"
+                  ? "w-full md:w-[280px] flex flex-col justify-center pl-8 rounded-xl shadow-xl h-[180px] bg-orders-card-bg bg-cover"
+                  : "w-full md:w-[250px] flex flex-col justify-center pl-8 rounded-xl shadow-xl h-[180px] bg-orders-card-bg bg-cover"
               }
             >
               <img
@@ -123,7 +122,7 @@ export default function Products({ state }) {
                 className="w-[200px] h-[100px] rounded-lg shadow-lg object-cover mx-auto"
               />
               <p className="text-gray-400 text-lg">{item.name}</p>
-              <p className="text-[#4dc396] font-medium truncate">
+              <p className="text-blue-500 font-medium truncate">
                 {item.explanation} ...
               </p>
             </div>
@@ -166,8 +165,8 @@ export default function Products({ state }) {
               key={index}
               className={
                 state
-                  ? "w-full md:w-[280px] flex flex-col justify-center pl-8 rounded-xl shadow-xl h-[180px] bg-revenue-card-bg bg-cover"
-                  : "w-full md:w-[250px] flex flex-col justify-center pl-8 rounded-xl shadow-xl h-[180px] bg-revenue-card-bg bg-cover"
+                  ? "w-full md:w-[280px] flex flex-col justify-center pl-8 rounded-xl shadow-xl h-[180px] bg-orders-card-bg bg-cover"
+                  : "w-full md:w-[250px] flex flex-col justify-center pl-8 rounded-xl shadow-xl h-[180px] bg-orders-card-bg bg-cover"
               }
             >
               <img
@@ -176,8 +175,7 @@ export default function Products({ state }) {
                 className="w-[200px] h-[100px] rounded-lg shadow-lg object-cover mx-auto"
               />
               <p className="text-gray-400 text-lg truncate">{item.name}</p>
-
-              <p className="text-[#4dc396] font-medium truncate">
+              <p className="text-blue-500 font-medium truncate">
                 {item.explanation} ...
               </p>
             </div>
@@ -191,8 +189,8 @@ export default function Products({ state }) {
               key={index}
               className={
                 state
-                  ? "w-full md:w-[280px] flex flex-col justify-center pl-8 rounded-xl shadow-xl h-[180px] bg-revenue-card-bg bg-cover"
-                  : "w-full md:w-[250px] flex flex-col justify-center pl-8 rounded-xl shadow-xl h-[180px] bg-revenue-card-bg bg-cover"
+                  ? "w-full md:w-[280px] flex flex-col justify-center pl-8 rounded-xl shadow-xl h-[180px] bg-customers-card-bg bg-cover"
+                  : "w-full md:w-[250px] flex flex-col justify-center pl-8 rounded-xl shadow-xl h-[180px] bg-customers-card-bg bg-cover"
               }
             >
               <img
@@ -201,7 +199,7 @@ export default function Products({ state }) {
                 className="w-[200px] h-[100px] rounded-lg shadow-lg object-cover mx-auto"
               />
               <p className="text-gray-400 text-lg">{item.name}</p>
-              <p className="text-[#4dc396] font-medium truncate">
+              <p className="text-[#f5803e] font-medium truncate">
                 {item.explanation} pieces
               </p>
             </div>

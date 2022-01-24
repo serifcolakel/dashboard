@@ -35,14 +35,14 @@ export default function Register() {
   };
   return (
     <div className="flex flex-col items-center justify-center bg-login-bg bg-no-repeat bg-cover h-[100vh] mx-auto overflow-hidden">
-      <div className="relative gap-x-4 flex flex-row items-center justify-around bg-white bg-opacity-50  p-4  h-[600px] w-[300px]  md:w-[1520px] md:h-[736px] rounded-2xl">
+      <div className="relative gap-x-4 flex flex-row items-center justify-around bg-white bg-opacity-20  p-4  h-[600px] w-[300px]  md:w-[1520px] md:h-[736px] rounded-2xl">
         <img
           src="/register-logo.svg"
           alt="logo"
           className="hidden md:block w-[650px] h-auto object-cover "
         />
         <div className="flex flex-col items-center justify-center md:w-[593px] md:h-[563px] z-20 gap-y-4 rounded-2xl p-4">
-          <h1 className="text-4xl font-extrabold  text-black bg-bgskills bg-clip-text ">
+          <h1 className="text-4xl font-extrabold  text-white">
             {"Register".split("").map((n, i) => (
               <ReactTextTransition
                 key={i}
@@ -61,7 +61,7 @@ export default function Register() {
             <div className="flex flex-col justify-center">
               <label
                 htmlFor="name"
-                className="text-black  text-lg font-bold text-left"
+                className="text-white  text-lg font-bold text-left"
               >
                 Name
               </label>
@@ -79,7 +79,7 @@ export default function Register() {
             <div className="flex flex-col justify-center">
               <label
                 htmlFor="email"
-                className="text-black  text-lg font-bold text-left"
+                className="text-white  text-lg font-bold text-left"
               >
                 Email
               </label>
@@ -97,7 +97,7 @@ export default function Register() {
             <div className="flex flex-col justify-center">
               <label
                 htmlFor="password"
-                className="text-black text-lg font-bold"
+                className="text-white text-lg font-bold"
               >
                 Password
               </label>

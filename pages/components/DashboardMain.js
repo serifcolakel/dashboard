@@ -23,7 +23,7 @@ import { Line } from "react-chartjs-2";
 
 export default function DashBoardMain({ state }) {
   const onlyWidth = useWindowWidth();
-  console.log(state);
+
   const randomNumberGenerator = () => Math.round(Math.random() * 100);
   const data = [
     randomNumberGenerator(),
@@ -64,7 +64,7 @@ export default function DashBoardMain({ state }) {
         duration: 1000,
         easing: "easeOutElastic",
         from: 0.5,
-        to: 0.2,
+        to: 0.5,
         loop: true,
       },
     },

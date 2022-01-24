@@ -1,51 +1,61 @@
 {
     "elevator": [
         {
+            "id": "elevator-1",
             "name": "ECO LINE",
             "img": "https://ake.com.tr/uploads/images/ecoline2_asansor.JPG",
             "explanation": "Konutlarınızda sade ve şık tasarımıyla tüm aile bireylerinin güvenle kullanabileceği bir asansör deneyimi sizi bekliyor. En yoğun kullanım saatlerinde dahi kusursuz çalışması için konforunuzu düşünerek üretildi. Eco Line ve Eco B Line serisi çevre dostu ve enerji tasarruflu olma özelliğine sahiptir. Eco Line halatlı, Eco B Line kayışlı asansörlerdir."
         },
         {
+            "id": "elevator-2",
             "name": "S LINE",
             "img": "https://ake.com.tr/uploads/images/Taksim_asansor_sline.JPG",
             "explanation": "Üstün kaliteli üretim teknolojisi ile S- Line orta yoğunlukta insan trafiği bulunan yapılarda kullanıma uygundur.  55 metreye kadar yükselen seyir mesafesi ve 2500 kg a kadar taşıma kapasitesine sahiptir. Yan duvarları satine paslanmaz, tam boy aynası, tavanda led aydınlatma tabanında ise kuartz kaplama seçenekleri yer almaktadır. Kaplama seçenekleri ile istenilen tarzda kabin tasarlama imkânı sunmaktadır. Dayanıklı ve modern bir tasarıma sahip S- Line bakımı kolay bir asansördür"
         },
         {
+            "id": "elevator-3",
             "name": "GOLD LINE",
             "img": "https://ake.com.tr/uploads/images/Ahsap_asansor-goldline.JPG",
             "explanation": "Misafirlerinizi AKE ayrıcalığı ile karşılayın. Göz alıcı tasarımlar, kullanışlı iç dizayn ve hızlı seyir özelliği ile yapılarınızda fark yaratır. Yoğun taşıma kapasitesi ve akıllı transfer özelliği ile yolcuları katlar arası gezinti yapmadan istedikleri yere ulaştırır."
         },
         {
+            "id": "elevator-4",
             "name": "H LINE",
             "img": "https://ake.com.tr/uploads/images/sedye_asansoru.jpg",
             "explanation": "Ake sağlık asansörleri hareket hassasiyetini göz önünde bulundurarak sarsıntısız taşıma sağlar.  Hızıyla hastaları güvenli bir şekilde katlar arası transfer eder. Özel koltuk tasarımı ve klima seçeneği ile konforunuzu artırır."
         },
         {
+            "id": "elevator-5",
             "name": "E LINE",
             "img": "https://ake.com.tr/uploads/images/Slider6.jpg",
             "explanation": "Acil durum asansörü (İtfaiye Asansörü) kullanımı doğrudan yangın söndürme ve kurtarma ekiplerinin veya itfaiyenin denetimi altında bulunan ve ek korunum uygulanmış olan özel asansördür. Yapı yüksekliği 51.50 metreden daha fazla olan yapılarda en az 1 asansörün acil hallerde kullanılmak üzere acil durum asansörü olarak düzenlenmesi şarttır"
         },
         {
+            "id": "elevator-6",
             "name": "YÜK ASANSÖRÜ",
             "img": "https://ake.com.tr/uploads/images/yuk_asasnsoru.jpg",
             "explanation": "Yük asansörleri sadece eşya taşımak için uygundur. monşarj , servis ve yük asansörü çeşitler mevcuttur. Alışveriş merkezi, işyerleri, hastaneler ve kurumlarda malzeme taşımak için kullanılır. Dayanıklılığı, uzun süre kullanım imkânı ve enerji tasarruflu olması sebebiyle tercih edilir."
         },
         {
+            "id": "elevator-7",
             "name": "CAR LINE",
             "img": "https://ake.com.tr/uploads/images/car.jpg",
             "explanation": "Araç asansörü alandan tasarruf etmenizi sağlıyor. AKE otopark ihtiyacı için geliştirdiği özel çözüm ile konut ve iş yerlerinin araç asansörü ihtiyaçlarında çözüm ortağı oluyor. 6000 kg’a kadar araç taşıyabilen sistem uzaktan kumanda ile de kontrol edilebiliyor. Katları verimli kullanmayı sağlayan araç asansörü, sarmal kapı sistemine sahip ve 15 metre yüksekliğe kadar çıkabiliyor."
         },
         {
+            "id": "elevator-8",
             "name": "PANORAMİK",
             "img": "https://ake.com.tr/uploads/images/154-201706151354271.jpg",
             "explanation": "Düz, Mantar, Roket kabin seçenekleri ile estetik ve kullanışlı asansörlerdir."
         },
         {
+            "id": "elevator-9",
             "name": "YAMAÇ ASANSÖRÜ",
             "img": "https://ake.com.tr/uploads/images/Yamac_asansoru.jpg",
             "explanation": "Yamaç Asansörleri ile tasarım ve esnekliği birleştiriyoruz. Yapısal sorunlu arazilerde teknolojik çözümler sunarak transfer kolaylığı sağlıyoruz. Özellikle turistik yerlerde ulaşım kolaylığı sağlayan asansörlerimiz eğimli arazilerde kapalı kabin sistemi ile transfer sağlamaktadır."
         },
         {
+            "id": "elevator-10",
             "name": "ECO B LINE",
             "img": "https://ake.com.tr/uploads/images/Ecoline_asansor.JPG",
             "explanation": "Tam boy ayna ve led aydınlatmasıyla ferah iç dizayna sahiptir. AKE uzmanlığı ile üretilen Eco serisi konforlu taşıma imkânı sunar."

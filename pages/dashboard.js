@@ -13,6 +13,7 @@ import Products from "./components/Products";
 import Account from "./components/Account";
 import Settings from "./components/Settings";
 import { MdSpaceDashboard, MdSettings, MdNotifications } from "react-icons/md";
+import { GiElevator } from "react-icons/gi";
 import { RiShoppingBagFill, RiExternalLinkLine } from "react-icons/ri";
 import {
   AiOutlineMenuFold,
@@ -22,10 +23,11 @@ import {
 } from "react-icons/ai";
 import Link from "next/link";
 import Head from "next/head";
+import Elevators from "./components/Elevators";
 
 export default function Dashboard() {
   const [active, setActive] = React.useState("dashboard");
-  const [show, setShow] = React.useState(true);
+  const [show, setShow] = React.useState(false);
   const onlyWidth = useWindowWidth();
   return (
     <div className="relative mx-auto flex flex-col items-center justify-between bg-[#061325] h-[100vh] overflow-y-scroll ">
@@ -70,14 +72,18 @@ export default function Dashboard() {
             className="w-[250px] h-10 hidden md:block border-[1px] font-bold text-[#344050] rounded-full px-10 border-[#344050] bg-[#061325] "
           />
         </div>
-        <div className="flex flex-row items-center justify-end gap-x-2 w-1/2">
+        <div className="relative flex flex-row items-center justify-end gap-x-2 w-1/2">
           <MdSettings
             size={25}
             className="text-blue-500 cursor-pointer animate-spin"
-          ></MdSettings>
-          <div className="absolute top-[23px] right-[89px] animate-ping w-6 h-6 border-blue-500 border-2 rounded-full"></div>
+          />
+          <div className="absolute top-[9px] right-[81px] animate-ping w-6 h-6 border-blue-500 border-2 rounded-full" />
 
-          <MdNotifications size={25} className="text-white cursor-pointer" />
+          <MdNotifications
+            size={25}
+            className="text-white cursor-pointer hover:text-red-500 "
+          />
+
           <img
             className="w-10 h-auto rounded-full"
             src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"
@@ -104,12 +110,6 @@ export default function Dashboard() {
           >
             <div className="divide-y-2 divide-[#1F2937] w-full ">
               <div className={show ? "hidden" : "block"}>
-                <img
-                  src="https://i.hizliresim.com/5aou44b.png"
-                  alt="dashboard-logo"
-                  className="mx-auto pt-4 w-[250px] h-auto object-cover"
-                />
-
                 <div className="hidden md:flex flex-row justify-between md:w-[248px] h-20 mx-auto w-full px-6">
                   <div className="my-auto">
                     <p className="font-semibold text-xl  ">AKE Inc</p>
@@ -160,6 +160,19 @@ export default function Dashboard() {
                 >
                   <RiShoppingBagFill size={25} />
                   <p className={show ? "hidden" : "block"}>Products</p>
+                </div>
+                <div
+                  onClick={() => {
+                    setActive("elevators"), onlyWidth < 768 && setShow(!show);
+                  }}
+                  className={
+                    active === "elevators"
+                      ? "flex flex-row gap-x-4 text-[#10B981] cursor-pointer bg-gray-500 bg-opacity-20 p-2"
+                      : "flex flex-row gap-x-4 hover:text-[#10B981] cursor-pointer p-2"
+                  }
+                >
+                  <GiElevator size={25} />
+                  <p className={show ? "hidden" : "block"}>Elevators</p>
                 </div>
                 <div
                   onClick={() => {
@@ -239,6 +252,8 @@ export default function Dashboard() {
             <Account />
           ) : active === "settings" ? (
             <Settings />
+          ) : active === "elevators" ? (
+            <Elevators />
           ) : (
             <DashboardMain />
           )}

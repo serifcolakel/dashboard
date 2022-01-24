@@ -131,5 +131,27 @@
             "img": "https://ake.com.tr/uploads/images/banners/mylift_banner.jpg",
             "explanation": "Standartların ötesinde özgün dizayna sahip asansörler üretmekteyiz."
         }
+    ],
+    "messages": [
+        {
+            "id": "author id",
+            "author": "Ahmet",
+            "content": "Merhabalar mehmet bey bugun nasılsınız acaba ?"
+        },
+        {
+            "id": "author id1",
+            "author": "Mehmet",
+            "content": "Merhabalar ahmet bey bugun nasılsınız acaba ?"
+        },
+        {
+            "id": "author id2",
+            "author": "sahin",
+            "content": "Merhabalar ali bey bugun nasılsınız acaba ?"
+        },
+        {
+            "id": "author id3",
+            "author": "Firat",
+            "content": "Merhabalar Abbas bey bugun nasılsınız acaba ?"
+        }
     ]
 }

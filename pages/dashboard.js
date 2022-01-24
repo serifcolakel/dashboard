@@ -1,34 +1,42 @@
 import React from "react";
-import {
-  FaLock,
-  FaQuestionCircle,
-  FaUserAlt,
-  FaUserFriends,
-  FaUserPlus,
-} from "react-icons/fa";
+import Link from "next/link";
+import Head from "next/head";
+import { useRouter } from "next/router";
 import { useWindowWidth } from "@react-hook/window-size";
 import DashboardMain from "./components/DashboardMain";
 import Customers from "./components/Customers";
 import Products from "./components/Products";
 import Account from "./components/Account";
 import Settings from "./components/Settings";
+import Elevators from "./components/Elevators";
+import item from "./item.json";
 import { MdSpaceDashboard, MdSettings, MdNotifications } from "react-icons/md";
 import { GiElevator } from "react-icons/gi";
-import { RiShoppingBagFill, RiExternalLinkLine } from "react-icons/ri";
+import { FaQuestionCircle, FaUserAlt, FaUserFriends } from "react-icons/fa";
+import {
+  RiShoppingBagFill,
+  RiExternalLinkLine,
+  RiMessage2Fill,
+} from "react-icons/ri";
 import {
   AiOutlineMenuFold,
   AiOutlineMenuUnfold,
   AiOutlineMenu,
   AiOutlineSearch,
 } from "react-icons/ai";
-import Link from "next/link";
-import Head from "next/head";
-import Elevators from "./components/Elevators";
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
 
 export default function Dashboard() {
+  const router = useRouter();
   const [active, setActive] = React.useState("customers");
   const [show, setShow] = React.useState(false);
   const onlyWidth = useWindowWidth();
+  const [showMessage, setShowMessage] = React.useState(false);
+  const [showUserMenu, setShowUserMenu] = React.useState(false);
+  const [messages] = React.useState(item.messages);
+
   return (
     <div className="relative mx-auto flex flex-col items-center justify-between bg-[#061325] h-[100vh] overflow-y-scroll ">
       <Head>
@@ -72,7 +80,7 @@ export default function Dashboard() {
             className="w-[250px] h-10 hidden md:block border-[1px] font-bold text-[#344050] rounded-full px-10 border-[#344050] bg-[#061325] "
           />
         </div>
-        <div className="relative flex flex-row items-center justify-end gap-x-2 w-1/2">
+        <div className="flex flex-row items-center justify-end gap-x-2 w-1/2 relative">
           <MdSettings
             size={25}
             className="text-blue-500 cursor-pointer animate-spin"
@@ -80,15 +88,99 @@ export default function Dashboard() {
           <div className="absolute top-[9px] right-[81px] animate-ping w-6 h-6 border-blue-500 border-2 rounded-full" />
 
           <MdNotifications
+            onClick={() => setShowMessage(!showMessage)}
             size={25}
-            className="text-white cursor-pointer hover:text-red-500 "
+            className={
+              showMessage
+                ? "text-white cursor-pointer hover:text-red-500"
+                : "text-red-500 cursor-pointer hover:text-white"
+            }
           />
-
+          {showMessage && (
+            <div className="absolute top-12 right-8 z-10 shadow-xl  w-[275px] h-[414px] rounded-lg flex flex-col border-[1px] border-[#132238]">
+              <div className="flex flex-row justify-between items-center bg-[#0e1c2f] h-[35px] px-4 ">
+                <p className="text-[#d7e1ee] ">Notifications</p>
+                <p className="text-[#2c7be5] text-[14px] hover:underline cursor-pointer ">
+                  Marked all as read
+                </p>
+              </div>
+              <p className="px-4 text-[#6c798c] bg-[#132238] h-6 font-bold text-sm">
+                NEW
+              </p>
+              {messages.map((message, i) => (
+                <div
+                  key={i}
+                  className={
+                    i === messages.length - 1
+                      ? "h-[80px] hover:bg-black hover:cursor-pointer flex flex-row items-center bg-[#061325] px-4 gap-x-4 "
+                      : "h-[80px] flex flex-row items-center bg-[#061325] hover:bg-black hover:cursor-pointer px-4 gap-x-4 border-b-[1px] border-gray-500"
+                  }
+                >
+                  <img
+                    src="https://falconreactbs4.prium.me/static/media/1.38f0341f.jpg"
+                    alt="logo"
+                    className="w-10 h-10 object-cover rounded-full "
+                  />
+                  <div className="text-[#edf2f9] text-[12px] ">
+                    <p>
+                      <strong>{message.author}</strong> : {message.content}
+                    </p>
+                    <p className="flex flex-row items-center gap-x-2 ">
+                      <RiMessage2Fill size={20} />
+                      <span className="text-gray-500">just now</span>
+                    </p>
+                  </div>
+                </div>
+              ))}
+              <p className="px-4 text-[#6c798c] bg-[#132238] h-6 font-bold text-sm">
+                EARLIER
+              </p>
+              <div className="h-[80px] flex flex-row items-center bg-[#0e1c2f] px-4 gap-x-4 py-4 hover:bg-black hover:cursor-pointer">
+                <img
+                  src="https://falconreactbs4.prium.me/static/media/1.38f0341f.jpg"
+                  alt="logo"
+                  className="w-10 h-10 object-cover rounded-full "
+                />
+                <div className="text-[#edf2f9] text-[12px] ">
+                  <p>
+                    The forecast today shows a low of 20℃ in California. See
+                    today's weather. 🌤️
+                  </p>
+                  <p className="flex flex-row items-center gap-x-2 ">
+                    <RiMessage2Fill size={20} />{" "}
+                    <span className="text-gray-500">9 hours ago</span>
+                  </p>
+                </div>
+              </div>
+              <p className="text-[#2c7be5] text-[14px] hover:underline cursor-pointer bg-[#0e1c2f] text-center border-t-[1px] border-gray-500 ">
+                View all
+              </p>
+            </div>
+          )}
           <img
-            className="w-10 h-auto rounded-full"
+            className="w-10 h-auto rounded-full cursor-pointer"
+            onClick={() => setShowUserMenu(!showUserMenu)}
             src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"
             alt="user"
           />
+          {showUserMenu && (
+            <div className="absolute top-12 text-[#8894a6] font-bold right-0 z-50 bg-[#0e1c2f] py-2 w-[160px] h-[100px] flex flex-col items-center rounded-lg shadow-xl justify-between border-[1px] border-[#132238]">
+              <p className="text-[#f5803e]">Serif Colakel</p>
+              <p className="hover:text-white cursor-pointer">
+                Profile & Account
+              </p>
+              <p
+                className="hover:text-white cursor-pointer"
+                onClick={() => {
+                  sleep(500).then(() => {
+                    router.push("/login");
+                  });
+                }}
+              >
+                Logout
+              </p>
+            </div>
+          )}
         </div>
       </div>
       <div className="flex flex-row w-full max-w-screen-xl h-full">

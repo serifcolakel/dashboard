@@ -144,7 +144,7 @@ export default function Dashboard() {
                 <div className="text-[#edf2f9] text-[12px] ">
                   <p>
                     The forecast today shows a low of 20℃ in California. See
-                    today's weather. 🌤️
+                    today is weather. 🌤️
                   </p>
                   <p className="flex flex-row items-center gap-x-2 ">
                     <RiMessage2Fill size={20} />{" "}

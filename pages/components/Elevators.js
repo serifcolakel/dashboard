@@ -79,7 +79,7 @@ export default function Elevators() {
           </div>
         )}
       </div>
-      <div className="grid md:grid-cols-2 grid-cols-1 w-full gap-4 rounded-lg md:px-0 px-4">
+      <div className="grid md:grid-cols-3 grid-cols-1 w-full gap-4 rounded-lg md:px-0 px-4">
         {text.length < 0
           ? null
           : elevators
@@ -94,12 +94,12 @@ export default function Elevators() {
                   <img
                     src={item.img || "https://i.hizliresim.com/otraj3b.png"}
                     alt={item.name}
-                    className="w-[300px] h-[250px] object-cover mx-auto rounded-xl pt-2"
+                    className="w-[300px] h-[250px] object-cover mx-auto rounded-xl transition-shadow pt-2"
                   />
                   <p className="text-[#f5803e] font-bold text-lg text-center">
                     {item.name}
                   </p>
-                  <p className="text-gray-400 text-lg p-4 text-center">
+                  <p className="text-gray-400 text-lg p-4 text-center animate-pulse ">
                     {item.explanation.slice(0, 200)}...
                   </p>
                   <FaPencilAlt className="text-white absolute hover:text-blue-500 cursor-pointer hover:bg-white  right-8 top-8 flex flex-row items-end bg-blue-500 rounded-xl md:w-8 md:h-8 w-8 h-8 p-1" />
@@ -110,15 +110,14 @@ export default function Elevators() {
                   />
                 </div>
               ))}
-
-        {elevators.filter((item) =>
-          item.name.toUpperCase().includes(text.toUpperCase())
-        ).length === 0 && (
-          <div className="text-red-500 font-bold text-center mx-auto bg-[#0e1c2f70] w-full pb-8">
-            {`No elevators found for ${text} search`}
-          </div>
-        )}
       </div>
+      {elevators.filter((item) =>
+        item.name.toUpperCase().includes(text.toUpperCase())
+      ).length === 0 && (
+        <div className="text-red-500 flex flex-row pt-6 justify-center font-bold text-center mx-auto bg-[#0e1c2f70] w-full pb-8">
+          {`No elevators found for ${text} search`}
+        </div>
+      )}
     </>
   );
 }

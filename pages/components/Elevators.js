@@ -115,7 +115,7 @@ export default function Elevators() {
           item.name.toUpperCase().includes(text.toUpperCase())
         ).length === 0 && (
           <div className="text-red-500 font-bold text-center mx-auto bg-[#0e1c2f70] w-full pb-8">
-            {`No users found for ${text} search`}
+            {`No elevators found for ${text} search`}
           </div>
         )}
       </div>
